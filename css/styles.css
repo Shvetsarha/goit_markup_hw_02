@@ -1,0 +1,125 @@
+:root {
+    --primary-text-color:#2E2F42;
+    --title-text-color:#434455;
+    --accent-color:#4D5AE5;
+    --accent-color-hard:#404BBF; 
+    --hero-light-accent: #FFFFFF;
+    --rerely-color:#E7E9FC;
+}
+
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+/*==========================header==============================*/
+.logo-web {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    color:var(--primary-text-color);
+}
+.logo-stu {
+    color:var(--accent-color);
+}
+.menu-nav-head {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color:var(--primary-text-color)
+}
+/*===========================body===========================*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color:var(--primary-text-color);
+}
+/*==маленькі підзаголовки==*/
+.sabtitl {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+/*==середні підзаголовки==*/
+.titl {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+}
+/*==великі підзаголовки==*/
+.hero-coll {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;   
+}
+/*==парагрофи==*/
+.paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color:var(--title-text-color);
+}
+/*==зміна текту при наведенні на нього==*/
+.change:hover, 
+.change:focus {
+    color:var(--accent-color);
+}
+/*== адреса ==*/
+.address-post, 
+.contact-phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color:var(--title-text-color);
+}
+/*== модальна кнопка ==*/
+.modal-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    color:var(--hero-light-accent);
+    background-color: var(--accent-color);   
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    border-radius: 4px;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--accent-color-hard);
+}
+
+/*============================ футер ======================*/
+.benefist {
+    color:var(--rerely-color);
+}
+/*============================ secod page ===============================*/
+/*== кнопки меню ==*/
+.button-nov {
+    background: var(--rerely-color);
+    color:var(--accent-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.button-nov:hover,
+.button-nov:focus {
+    color: var(--hero-light-accent);
+    background-color: var(--accent-color);
+}
