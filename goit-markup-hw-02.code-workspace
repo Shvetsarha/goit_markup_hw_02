@@ -7,5 +7,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "goit_markup_hw_02"
+	}
 }

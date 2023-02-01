@@ -13,7 +13,14 @@
 .link {
     text-decoration: none;
 }
-/*==========================header==============================*/
+/*== section header =========================================*/
+
+.page-header {
+
+    border-bottom: 1px solid var(--rerely-color)
+}
+/*== content header ==*/
+
 .logo-web {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -21,10 +28,10 @@
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
-    color:var(--primary-text-color);
+    color: var(--accent-color);
 }
-.logo-stu {
-    color:var(--accent-color);
+.logo-stu-header {
+    color: var(--primary-text-color);
 }
 .menu-nav-head {
     font-weight: 500;
@@ -32,46 +39,6 @@
     line-height: 1.5;
     color:var(--primary-text-color)
 }
-/*===========================body===========================*/
-body {
-    font-family: 'Roboto', sans-serif;
-    color:var(--primary-text-color);
-}
-/*==маленькі підзаголовки==*/
-.sabtitl {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-}
-/*==середні підзаголовки==*/
-.titl {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-}
-/*==великі підзаголовки==*/
-.hero-coll {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;   
-}
-/*==парагрофи==*/
-.paragraph {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color:var(--title-text-color);
-}
-/*==зміна текту при наведенні на нього==*/
-.change:hover, 
-.change:focus {
-    color:var(--accent-color);
-}
-/*== адреса ==*/
 .address-post, 
 .contact-phone {
     font-style: normal;
@@ -80,8 +47,62 @@ body {
     line-height: 1.5;
     color:var(--title-text-color);
 }
-/*== модальна кнопка ==*/
+/*===========================body===========================*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color)
+    background-color: var(--hero-light-accent);
+
+}
+/*+++++++ content all body +++++++*/
+/* little subtitle */
+.sutitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+/* middle subtitle */
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+}
+
+.paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color:var(--title-text-color);
+    letter-spacing: 0.02em;
+}
+/* chenge text color */
+.change:hover, 
+.change:focus {
+    color:var(--accent-color);
+}
+
+/*== section HERO ===========================================*/
+.hero {
+    background-color: var(--primary-text-color);
+}
+/*+++++++ content HERO +++++++*/
+/* big subtitle */
+.hero-coll {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--hero-light-accent);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
 .modal-btn {
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -102,15 +123,40 @@ body {
     background-color: var(--accent-color-hard);
 }
 
-/*============================ футер ======================*/
+/*== section VALUET =========================================*/ 
+.valuet {
+
+}
+/*== section DOING =========================================*/ 
+.valuet {
+    background-color: var(--rerely-color)
+}
+
+/*== section Team ===========================================*/ 
+.team {
+
+}
+
+/*== section footer ========================================*/ 
+.footer {
+    background-color: var(--primary-text-color);
+}
+/*+++++++ content FOOTER +++++++*/
 .benefist {
     color:var(--rerely-color);
 }
-/*============================ secod page ===============================*/
+
+.logo-stu-footer {
+    color: var(--hero-light-accent);
+}
+
+
+/*2============================ secod page ===============================*/
 /*== кнопки меню ==*/
 .button-nov {
-    background: var(--rerely-color);
+    background-color: var(--rerely-color);
     color:var(--accent-color);
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
