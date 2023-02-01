@@ -5,6 +5,7 @@
     --accent-color-hard:#404BBF; 
     --hero-light-accent: #FFFFFF;
     --rerely-color:#E7E9FC;
+    --all-page-color: #E5E5E5;
 }
 
 .list {
@@ -51,7 +52,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color)
-    background-color: var(--hero-light-accent);
+    background-color:var(var(--all-page-color));
 
 }
 /*+++++++ content all body +++++++*/
