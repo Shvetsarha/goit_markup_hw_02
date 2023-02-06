@@ -6,6 +6,7 @@
     --hero-light-accent: #FFFFFF;
     --rerely-color:#E7E9FC;
     --all-page-color: #E5E5E5;
+    --lidht-shade:#F4F4FD;
 }
 
 .list {
@@ -14,11 +15,71 @@
 .link {
     text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display:block;
+}
+
+button {
+    cursor: pointer;
+}
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.indent-page {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 /*== section header =========================================*/
-
 .page-header {
+    background:var(--hero-light-accent);
+    border-bottom: 1px solid var(--rerely-color);
+}
+.page-header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.page-header-container, 
+.page-nav, 
+.conect,
+.menu-nav,
+.valuet-list,
+.photo-doing,
+.photo-team {
+    display: flex;
+    align-items: center;
+    
+}
 
-    border-bottom: 1px solid var(--rerely-color)
+.logo-web {
+    margin-right: 76px;
+}
+.menu-nav {
+    gap: 40px;
+}
+.address {
+    margin-left: auto;
+}
+.address-post {
+    margin-right: 40px;
 }
 /*== content header ==*/
 
@@ -34,12 +95,13 @@
 .logo-stu-header {
     color: var(--primary-text-color);
 }
-.menu-nav-head {
+.nav-head {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color:var(--primary-text-color)
 }
+
 .address-post, 
 .contact-phone {
     font-style: normal;
@@ -52,12 +114,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color)
-    background-color:var(var(--all-page-color));
-
+    background-color: var(var(--all-page-color));
 }
 /*+++++++ content all body +++++++*/
 /* little subtitle */
-.sutitle {
+.subtitle {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -90,70 +151,106 @@ body {
 /*== section HERO ===========================================*/
 .hero {
     background-color: var(--primary-text-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 /*+++++++ content HERO +++++++*/
 /* big subtitle */
 .hero-coll {
-    font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     color: var(--hero-light-accent);
-    text-align: center;
     letter-spacing: 0.02em;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 48px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .modal-btn {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    cursor: pointer;
     color:var(--hero-light-accent);
     background-color: var(--accent-color);   
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 32px;
-    gap: 10px;
     border-radius: 4px;
+    display: block;
+    margin:0 auto;
 }
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: var(--accent-color-hard);
 }
-
 /*== section VALUET =========================================*/ 
-.valuet {
 
+.valuet-list {
+    gap: 24px;
 }
 /*== section DOING =========================================*/ 
-.valuet {
-    background-color: var(--rerely-color)
+.valet-our {
+    display: none;
 }
-
+.photo-doing {
+    gap: 24px;
+}
+.doing-what {
+    margin-bottom: 72px;
+    text-align: center;
+}
+.doing-distance {
+    flex-basis: calc((100% - 48px) / 3);
+}
 /*== section Team ===========================================*/ 
 .team {
-
+    background-color: var(--lidht-shade)
+}
+.photo-team {
+   gap: 24px;
+}
+.tim-our {
+    margin-bottom: 72px;
+    text-align: center;
 }
 
+.team-distance { 
+    flex-basis: calc((100% - 48px) / 4);
+}
+
+.team-card {
+    flex-basis: calc((100% - 48px) / 4);
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
 /*== section footer ========================================*/ 
 .footer {
     background-color: var(--primary-text-color);
+    padding: 100px 156px;
 }
 /*+++++++ content FOOTER +++++++*/
 .benefist {
     color:var(--rerely-color);
+    width: 264px;
 }
 
 .logo-stu-footer {
     color: var(--hero-light-accent);
 }
 
-
 /*2============================ secod page ===============================*/
 /*== кнопки меню ==*/
+.works-our {
+    display: none;
+}
+.button-nov-list {
+    margin-bottom: 72px;
+}
 .button-nov {
     background-color: var(--rerely-color);
     color:var(--accent-color);
@@ -162,11 +259,39 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background:var(--lidht-shade);
+    border: 1px solid var(--rerely-color);
     border-radius: 4px;
 }
 .button-nov:hover,
 .button-nov:focus {
     color: var(--hero-light-accent);
     background-color: var(--accent-color);
+}
+.button-nov-list,
+.case-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+}
+.button-nov-list {
+    justify-content: center;
+}
+.case-distance {
+    flex-basis: calc((100% - 48px) / 3);
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+.case-distance-foto {
+    flex-basis: calc((100% - 48px) / 3)
 }
