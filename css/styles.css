@@ -299,21 +299,21 @@ body {
 .case-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    
+    row-gap: 48px;
+    column-gap: 24px;
+}
+.case-distance-foto {
+    flex-basis: calc((100% - 48px) / 3);
 }
 .button-nov-list {
     justify-content: center;
 }
 .case-distance {
-    flex-basis: calc((100% - 48px) / 3);
-    background: #FFFFFF;
-    border: 1px solid #E7E9FC;
+    background: var(--hero-light-accent);
+    border: 1px solid var(--rerely-color);
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
 }
-.case-distance-foto {
-    flex-basis: calc((100% - 48px) / 3)
-}
+
 /* new link
