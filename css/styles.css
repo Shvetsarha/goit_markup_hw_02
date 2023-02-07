@@ -27,6 +27,8 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 img {
@@ -192,24 +194,34 @@ body {
 
 }
 .valuet-distance {
-    flex-basis: calc((100% - 48px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
 
 }
 .valuet-list {
-    justify-content:space-between
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.valuet-strategy {
+    margin-bottom: 8px;
 }
 /*== section DOING =========================================*/ 
 .valet-our {
     display: none;
 }
 .photo-doing {
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+}
+.doing-distance {
+    flex-basis: calc((100% - 48px) / 3);
 }
 .doing-what {
     margin-bottom: 72px;
     text-align: center;
 }
-.doing-distance 
+
 /*== section Team ===========================================*/ 
 .team {
     background-color: var(--lidht-shade)
@@ -224,7 +236,8 @@ body {
     gap: 24px;
 }
 .team-distance {
-    flex-basis: calc((100% - 48px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
+    margin-left: 0;
 }
 .team-card {
 
@@ -248,7 +261,9 @@ body {
 .logo-stu-footer {
     color: var(--hero-light-accent);
 }
-
+.footer-logo {
+    margin-right: 0;
+}
 /*2============================ secod page ===============================*/
 /*== кнопки меню ==*/
 .works-our {
