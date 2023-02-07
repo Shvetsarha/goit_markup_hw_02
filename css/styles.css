@@ -28,6 +28,7 @@ ul {
     margin-bottom: 0;
     padding-left: 0;
 }
+
 img {
     display:block;
 }
@@ -113,7 +114,7 @@ button {
 /*===========================body==========================*/
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
     background-color: var(var(--all-page-color));
 }
 /*+++++++ content all body +++++++*/
@@ -186,9 +187,16 @@ body {
     background-color: var(--accent-color-hard);
 }
 /*== section VALUET =========================================*/ 
+.valuet {
+    padding-bottom: 0;
 
+}
+.valuet-distance {
+    flex-basis: calc((100% - 48px) / 4);
+
+}
 .valuet-list {
-    gap: 24px;
+    justify-content:space-between
 }
 /*== section DOING =========================================*/ 
 .valet-our {
@@ -201,27 +209,25 @@ body {
     margin-bottom: 72px;
     text-align: center;
 }
-.doing-distance {
-    flex-basis: calc((100% - 48px) / 3);
-}
+.doing-distance 
 /*== section Team ===========================================*/ 
 .team {
     background-color: var(--lidht-shade)
-}
-.photo-team {
-   gap: 24px;
 }
 .tim-our {
     margin-bottom: 72px;
     text-align: center;
 }
-
-.team-distance { 
+.photo-team{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.team-distance {
     flex-basis: calc((100% - 48px) / 4);
 }
-
 .team-card {
-    flex-basis: calc((100% - 48px) / 4);
+
     background: #FFFFFF;
     border: 1px solid #E7E9FC;
     padding-top: 32px;
@@ -295,3 +301,4 @@ body {
 .case-distance-foto {
     flex-basis: calc((100% - 48px) / 3)
 }
+/* new link
