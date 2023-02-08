@@ -49,16 +49,21 @@ button {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.paragraph {
+    margin-top: 8px;
+}
 /*== section header =========================================*/
 .page-header {
     background:var(--hero-light-accent);
     border-bottom: 1px solid var(--rerely-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    
 }
 .page-header-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .page-header-container, 
 .page-nav, 
@@ -81,7 +86,7 @@ button {
 .address {
     margin-left: auto;
 }
-.address-post {
+.conect-li-add {
     margin-right: 40px;
 }
 /*== content header ==*/
@@ -251,7 +256,8 @@ body {
 /*== section footer ========================================*/ 
 .footer {
     background-color: var(--primary-text-color);
-    padding: 100px 156px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 /*+++++++ content FOOTER +++++++*/
 .benefist {
