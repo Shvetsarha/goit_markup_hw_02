@@ -71,7 +71,7 @@ button {
 .menu-nav,
 .valuet-list,
 .photo-doing,
-.photo-team, {
+.photo-team {
     display: flex;
     align-items: center;
     
