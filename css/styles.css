@@ -71,7 +71,7 @@ button {
 .menu-nav,
 .valuet-list,
 .photo-doing,
-.photo-team {
+.photo-team, {
     display: flex;
     align-items: center;
     
@@ -161,6 +161,9 @@ body {
     background-color: var(--primary-text-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("../images/foto2/people-office.jpg");
+    background-size: cover; 
+    background-color: #2E2F42;
 }
 /*+++++++ content HERO +++++++*/
 /* big subtitle */
@@ -240,7 +243,8 @@ body {
     flex-wrap: wrap;
     gap: 24px;
 }
-.team-distance {
+.team-distance, 
+.social-list-intem {
     flex-basis: calc((100% - 72px) / 4);
     margin-left: 0;
 }
@@ -252,6 +256,23 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     text-align: center;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+
+}
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
 }
 /*== section footer ========================================*/ 
 .footer {
@@ -328,4 +349,4 @@ body {
     padding-left: 16px;
 }
 
-/* new gap*/
+/* new gap*------/==========
