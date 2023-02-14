@@ -160,7 +160,8 @@ body {
 
 /*== section HERO ===========================================*/
 .hero {
-    height: 600px;
+   
+    width: 1440px;
     background-color: var(--primary-text-color);
     padding-top: 188px;
     padding-bottom: 188px;
@@ -189,11 +190,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color:var(--hero-light-accent);
-    background-color: var(--accent-color);   
+    background: #4D5AE5;   
     padding: 16px 32px;
     border-radius: 4px;
     display: block;
     margin:0 auto;
+    border-width: 0px;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -206,31 +208,22 @@ body {
 }
 .valuet-distance {
     flex-basis: calc((100% - 72px) / 4);
+    display: block;
+    border-radius: 4px;
 
 }
-.valuet-pictures {
-    display: block;
-    height: 100%;
+
+.valuet-intem {
     width: 100%;
     height: 112px;
     background-color: var(--lidht-shade);
-    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 8px;
 }
 
-.antenna,
-.clock {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.diagram {
-    padding-top: 31px;
-    padding-bottom: 31px;
-}
-.astronaut {
-    padding-top: 28px;
-    padding-bottom: 27px;
-}
 .valuet {
     padding-bottom: 0;
 
@@ -301,67 +294,16 @@ body {
     background-color: #404BBF;
 }
 /*== section customer ========================================*/ 
-/*== customer boxes =======*/ 
+/*== customer H =======*/ 
 .customer {
     padding-top: 130px;
     padding-bottom: 120px;
-}
-.customer-pictures-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-bottom: 8px;
-}
-
-.customer-box:nth-child(1) {
- 
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-
-}
-.customer-box:nth-child(2) {
-
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
-.customer-box:nth-child(3) {
- 
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
-.customer-box:nth-child(4) {
- 
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
-.customer-box:nth-child(5) {
-   
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
-.customer-box:nth-child(6) {
-  
-    height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
- 
-}
-.customer-box:hover,
-.customer-box:focus {
-    border-color: #4D5AE5;
-
 }
 .customers-every {
     text-align: center;
     margin-bottom: 72px;
 }
-
-/*== customer pictures =======*/ 
+/*== customer logo =======*/ 
 .customer-logo-list {
     display: flex;
     flex-wrap: wrap;
@@ -369,39 +311,26 @@ body {
 }
 .customer-box {
     flex-basis: calc((100% - 120px) / 6);
-
-}
-.customer-logo-first {
-    padding-top: 23px;
-    padding-bottom: 15px;
-    fill: #8E8F99;
+    height: 88px;
+    width: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  
 }
-.customer-logo-one {
-    padding-top: 19px;
-    padding-bottom: 17px;
+.logo-box {
     fill: #8E8F99;
+
+ 
 }
-.customer-logo-two {
-    padding-top: 25px;
-    padding-bottom: 22px;
-    fill: #8E8F99;
+.customer-box:hover,
+.customer-box:focus {
+    border-color: #4D5AE5;
 }
-.customer-logo-three {
-    padding-top: 25px;
-    padding-bottom: 22px;
-    fill: #8E8F99;
-}
-.customer-logo-for {
-    padding-top: 22px;
-    padding-bottom: 20px;
-    fill: #8E8F99;
-}
-.customert-logo-fiv {
-    padding-top: 22px;
-    padding-bottom: 22px;
-    fill: #8E8F99;
-}
+
+
 .logo-box:hover,
 .logo-box:focus {
     fill: #404BBF;
@@ -420,7 +349,10 @@ body {
 .footer-intem {
     align-items:flex-start;
 }
-
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color:#31D0AA;
+}
 .benefist {
     color:var(--rerely-color);
     width: 264px;
@@ -513,5 +445,30 @@ body {
 .case-distance-foto:hover {
     border: #434455;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.case-list-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    background-color: #4D5AE5;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #F4F4FD;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: transform 500ms linear; 
+}
+.case-list-img-wrapper:hover .overlay {
+    transform: translate(0, 0);
 }
 /* new gap*------/bvdbj=============
